@@ -21,9 +21,9 @@ const Navlinks = () => {
     },
   ];
   return (
-    <div>
+    <div className='flex items-center gap-5'>
       {links.map((link, index) => (
-        <NavLink to={link.path} key={`${link.name}-${index}`} className='text-base'>
+        <NavLink to={link.path} key={`${link.name}-${index}`} className='text-base '>
           {link.name}
         </NavLink>
       ))}

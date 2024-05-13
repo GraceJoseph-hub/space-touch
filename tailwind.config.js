@@ -9,6 +9,7 @@ export default {
       colors: {
         light: "#fff",
         "off-white": "rgba(147, 107, 232, 0.05)",
+        bold: '#151b1d',
         red: '#ff1654',
       },
     },

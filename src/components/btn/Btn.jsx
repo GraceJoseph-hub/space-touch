@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Moon from '../icons/Moon';
 
 const Btn = ({path, text, isMainColor, className}) => {
   return (
-    <div>
+    <div className='flex items-center gap-5'>
       <Link
         to={path}
         className={`${
@@ -14,6 +15,7 @@ const Btn = ({path, text, isMainColor, className}) => {
       >
         {text}
       </Link>
+      <Moon />
     </div>
   );
 }
