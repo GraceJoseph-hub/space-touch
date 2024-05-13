@@ -1,5 +1,4 @@
 import React from 'react'
-// import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 // useLocation is a react router hook that has an object that contains the current/active route/page 

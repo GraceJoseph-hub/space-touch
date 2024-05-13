@@ -8,7 +8,7 @@ const Brand = () => {
       <Link to='/' className='text-3xl font-semibold'>
         Spacetouch
       </Link>
-      <img src={brandlogo} alt="brand logo" width='35' height='35'/>
+      <img src={brandlogo} alt="brand logo" width='35' height='35' className='cursor-pointer'/>
     </div>
   )
 }
