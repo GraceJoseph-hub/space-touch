@@ -11,6 +11,8 @@ export default {
         "off-white": "rgba(147, 107, 232, 0.05)",
         bold: '#151b1d',
         red: '#ff1654',
+        grey: '#777777',
+        lightGrey: "#c5c5c5",
       },
     },
   },

@@ -20,49 +20,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
-        <Footer />
       </Router>
     </div>
   );
