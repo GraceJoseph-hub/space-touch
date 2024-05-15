@@ -3,8 +3,9 @@ import Carousel from "../components/carousel/Carousel";
 import Card from "../components/card/Card";
 import cardData from "../components/card/CardData";
 import Title from "../components/title/Title";
-import CountUpAnimation from "../components/countup/CountUpAnimation";
-import Aside from "../components/countup/CountUpAnimation";
+import CountUpAnimation from "../components/countupAnimation/CountUpAnimation";
+import Aside from "../components/aside/Aside";
+
 
 const Home = () => {
 
@@ -29,6 +30,7 @@ const Home = () => {
         </div>
       </div>
       <CountUpAnimation />
+      <Aside />
     </div>
   );
 };

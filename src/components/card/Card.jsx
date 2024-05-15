@@ -1,12 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import sample from '../carousel/sample.jpg'
-// import Destination from '../../pages/Destination';
 import Description from '../description/Description';
 
-const Card = ({ title, dayNight, startTitle, startAmount, condition, className }) => {
+const Card = ({ title, dayNight, startTitle, startAmount, condition }) => {
   return (
-    <div
-      className={`flex items-center gap-9 p-7 w-[31.8rem] h-72 bg-light border border-solid rounded-lg shadow-md ${className}`}
+    <Link to='/'
+      className="flex items-center gap-9 p-7 w-[31.8rem] h-72 bg-light border border-solid rounded-lg shadow-md"
     >
       <div className="h-56 w-52 border border-solid rounded-xl">
         <img
@@ -22,7 +22,7 @@ const Card = ({ title, dayNight, startTitle, startAmount, condition, className }
         startAmount={startAmount}
         condition={condition}
       />
-    </div>
+    </Link>
   );
 };
 
