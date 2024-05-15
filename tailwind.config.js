@@ -9,9 +9,10 @@ export default {
       colors: {
         light: "#fff",
         "off-white": "rgba(147, 107, 232, 0.05)",
-        bold: '#151b1d',
-        red: '#ff1654',
-        grey: '#777777',
+        darkShade: "rgba(0, 0, 0, 0.573)",
+        bold: "#151b1d",
+        red: "#ff1654",
+        grey: "#777777",
         lightGrey: "#c5c5c5",
       },
     },
