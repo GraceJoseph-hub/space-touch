@@ -17,18 +17,18 @@ const Home = () => {
       </div>
       <div className="w-full px-20 pt-20 pb-20">
         <Title />
-        <div className="grid gap-8 grid-cols-2 grid-rows-3">
-          {cardData.map((cardProps, index) => (
+        {/* <div className="grid gap-8 grid-cols-2 grid-rows-3"> */}
+          {/* {cardData.map((cardProps, index) => ( */}
             <Card
-              key={index}
-              title={cardProps.title}
-              dayNight={cardProps.dayNight}
-              startTitle={cardProps.startFrom.startTitle}
-              startAmount={cardProps.startFrom.amount}
-              condition={cardProps.condition}
+              // key={index}
+              // title={cardProps.title}
+              // dayNight={cardProps.dayNight}
+              // startTitle={cardProps.startFrom.startTitle}
+              // startAmount={cardProps.startFrom.amount}
+              // condition={cardProps.condition}
             />
-          ))}
-        </div>
+          {/* ))} */}
+        {/* </div> */}
       </div>
       <CountUpAnimation />
       <Aside />
