@@ -4,7 +4,9 @@ import { useState } from "react";
 
 
 const Aside = () => {
-   const [isHovered, setIsHovered] = useState(null);
+  const [isHovered, setIsHovered] = useState(null);
+  const [leftState, setLeftState] = useState(false);
+
   const description = [
     {
       title: '3 Days, 4 Nights',
@@ -28,12 +30,12 @@ const Aside = () => {
       <Link
         to="/"
         className="h-[39.5rem] w-1/2 border border-solid rounded-xl bg-[url('../../../public/images/sample.jpg')]"
-        onMouseEnter={() => setIsHovered(index)}
-        onMouseLeave={() => setIsHovered(null)}
+        onMouseEnter={() => setLeftState(true)}
+        onMouseLeave={() => setLeftState(false)}
       >
         <div className="h-full w-full text-light font-medium bg-darkShade border border-solid rounded-xl relative">
           <p className="absolute left-8 bottom-10">3 days, 4 Nights</p>
-          {isHovered && <p className="absolute left-8 bottom-4">$1720</p>}
+          {leftState && <p className="absolute left-8 bottom-4">$1720</p>}
         </div>
       </Link>
       <div className="grid grid-cols-2 gap-6 grid-rows-2 w-1/2">
@@ -47,9 +49,14 @@ const Aside = () => {
           >
             <div className="h-full w-full text-light font-medium bg-darkShade border border-solid rounded-xl relative">
               <p className="absolute left-8 bottom-10">{description.title}</p>
-              {isHovered && (
-                <p className="absolute left-8 bottom-4">{description.amount}</p>
-              )}
+              <p
+                className={`absolute left-8 bottom-4 ${
+                  isHovered === index &&
+                  "transition-transform duration-500 transform -translate-y-2"
+                } `}
+              >
+                {description.amount}
+              </p>
             </div>
           </Link>
         ))}

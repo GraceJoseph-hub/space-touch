@@ -5,6 +5,7 @@ import cardData from "../components/card/CardData";
 import Title from "../components/title/Title";
 import CountUpAnimation from "../components/countupAnimation/CountUpAnimation";
 import Aside from "../components/aside/Aside";
+import Benefit from "../components/benefit/Benefit";
 
 
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
       </div>
       <CountUpAnimation />
       <Aside />
+      <Benefit />
     </div>
   );
 };

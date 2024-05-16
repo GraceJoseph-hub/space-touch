@@ -6,9 +6,9 @@ import Description from '../description/Description';
 const Card = ({ title, dayNight, startTitle, startAmount, condition }) => {
   return (
     <Link to='/'
-      className="flex items-center gap-9 p-7 w-[31.8rem] h-72 bg-light border border-solid rounded-lg shadow-md"
+      className="flex items-center gap-9 p-5 w-[31.8rem] h-auto bg-light border border-solid rounded-lg shadow-md"
     >
-      <div className="h-56 w-52 border border-solid rounded-xl">
+      <div className="h-52 w-48 border border-solid rounded-xl">
         <img
           src={sample}
           alt="beautiful places to visit"

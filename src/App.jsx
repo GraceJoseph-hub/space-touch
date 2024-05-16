@@ -6,9 +6,11 @@ import Home from './pages/Home'
 import Destination from './pages/Destination'
 import Contact from './pages/Contact'
 import Footer from './components/footer/Footer';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
-
+  gsap.registerPlugin(ScrollTrigger);
   return (
     <div className="bg-off-white w-full">
       <Router>
