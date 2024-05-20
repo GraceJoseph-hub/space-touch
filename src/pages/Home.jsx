@@ -6,10 +6,9 @@ import Title from "../components/title/Title";
 import CountUpAnimation from "../components/countupAnimation/CountUpAnimation";
 import Aside from "../components/aside/Aside";
 import Benefit from "../components/benefit/Benefit";
-
+import HappyClients from "../components/happyClients/HappyClients";
 
 const Home = () => {
-
   return (
     <div className="mt-20">
       <div className="pb-10">
@@ -17,22 +16,12 @@ const Home = () => {
       </div>
       <div className="w-full px-20 pt-20 pb-20">
         <Title />
-        {/* <div className="grid gap-8 grid-cols-2 grid-rows-3"> */}
-          {/* {cardData.map((cardProps, index) => ( */}
-            <Card
-              // key={index}
-              // title={cardProps.title}
-              // dayNight={cardProps.dayNight}
-              // startTitle={cardProps.startFrom.startTitle}
-              // startAmount={cardProps.startFrom.amount}
-              // condition={cardProps.condition}
-            />
-          {/* ))} */}
-        {/* </div> */}
+        <Card />
       </div>
       <CountUpAnimation />
       <Aside />
       <Benefit />
+      <HappyClients />
     </div>
   );
 };

@@ -13,6 +13,7 @@ export default {
         bold: "#151b1d",
         red: "#ff1654",
         grey: "#777777",
+        amber: "rgb(67 20 7)",
         lightGrey: "#c5c5c5",
       },
     },

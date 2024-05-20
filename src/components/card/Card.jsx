@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import cardData from "./CardData";
 // import sample from '../carousel/sample.jpg'
 // import Description from "../description/Description";

@@ -40,15 +40,23 @@ const Aside = () => {
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className=" rounded-xl"
+        className="h-[667px] w-1/2 bg-[url('../../../public/images/g10.jpg')] border border-solid rounded-xl relative"
       >
-        <img src={g10} alt="" className="border border-solid rounded-xl" />
-        <div className="-mt-20 text-light">
+        <div className="h-full w-full bg-darkShade border border-solid rounded-xl">
+          <div className="text-light absolute bottom-10 left-10">
+            <h6>3 Days, 4 Nights</h6>
+            <p className={isHovered ? styles.show : styles.hide}>$1520</p>
+          </div>
+        </div>
+        {/* <div className="-mt-20 ml-6 "></div> */}
+        {/* <img src={g10} alt="" className="border border-solid rounded-xl" />
+        <div className="-mt-20 ml-6 text-light">
           <h6>3 Days, 4 Nights</h6>
           <p className={isHovered ? styles.show : styles.hide}>$1520</p>
-        </div>
+        </div> */}
       </div>
-      <div className={`grid grid-cols-2 gap-6 grid-rows-2 ${styles.cardBox}`}>
+
+      <div className="grid grid-cols-2 gap-6 grid-rows-2 h-[667px] w-1/2">
         {description.map((details, index) => (
           <div
             key={index}
@@ -63,67 +71,19 @@ const Aside = () => {
                 className="h-full w-full border border-solid rounded-xl"
               />
             </div>
-            <div className="-mt-20 text-light">
+            <div className="-mt-20 ml-6 text-light">
               <h6>{details.title}</h6>
-              <p className={hoveredIndex === index ? styles.show : styles.hide}>
+              <p
+                className={`${styles.hide} ${
+                  hoveredIndex === index ? styles.show : ""
+                }`}
+              >
                 {details.amount}
               </p>
             </div>
           </div>
         ))}
       </div>
-      {/* <div className={`grid grid-cols-2 gap-6 grid-rows-2 ${styles.cardBox}`}>
-        {description.map((details, index) => (
-          <div key={index} className="flex flex-col">
-            <div className="h-[300px] w-[300px]">
-              <img src={details.path} alt="" />
-            </div>
-            <div className="-mt-20 text-light">
-              <h6 className="">{details.title}</h6>
-              <p className="">{details.amount}</p>
-            </div>
-          </div>
-        ))}
-      </div> */}
-
-      {/* <div
-        to="/"
-        className="h-[39.5rem] border border-solid rounded-xl bg-[url('../../../public/images/g10.jpg')]"
-        onMouseEnter={() => setLeftState(true)}
-        onMouseLeave={() => setLeftState(false)}
-      >
-        <div className="h-full text-light font-medium bg-darkShade border border-solid rounded-xl relative">
-          <p className="absolute left-8 bottom-10">3 days, 4 Nights</p>
-          {leftState && <p className="absolute left-8 bottom-4">$1720</p>}
-        </div>
-      </div>
-      <div className="grid grid-cols-2 gap-6 grid-rows-2">
-        {description.map((description, index) => (
-          <Link
-            to="/"
-            key={index}
-            style={{ backgroundImage: description.path }}
-            className="h-[19rem] border border-solid rounded-xl relative"
-            onMouseEnter={() => setIsHovered(index)}
-            onMouseLeave={() => setIsHovered(null)}
-          >
-            <div>
-              <img src={description.path} alt="" />
-            </div>
-            <div className="h-full w-full text-light font-medium bg-darkShade border border-solid rounded-xl relative">
-              <p className="absolute left-8 bottom-10">{description.title}</p>
-              <p
-                className={`absolute left-8 bottom-4 ${
-                  isHovered === index &&
-                  "transition-transform duration-500 transform -translate-y-2"
-                } `}
-              >
-                {description.amount}
-              </p>
-            </div>
-          </Link>
-        ))}
-      </div> */}
     </div>
   );
 };

@@ -10,9 +10,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: ''; */
+  
 }
-/* .active-link{ color: red } */
-/* body{
-  @apply text-dark;
-} */
+
+.slick-dots li button:before {
+  font-size: 12px; 
+  color: #ff1654; 
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff1654; 
+}
+

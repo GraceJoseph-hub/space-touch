@@ -9,6 +9,8 @@ export default function SimpleSlider() {
   var settings = {
     dots: true,
     infinite: true,
+    fade: true,
+    // waitForAnimate: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
