@@ -59,52 +59,6 @@ const HappyClients = () => {
           </div>
         ))}
       </Slider>
-      {/* <div className="">
-        {testimonials.map((testimonial, index) => (
-          <div>
-            
-            <p>{testimonial.text}</p>
-          </div>
-        ))}
-        <Slider {...settings}>
-          <div className="">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-              magni?
-            </p>
-            <img
-              src={sample}
-              alt=""
-              className="h-32 w-32 rounded-full object-cover"
-            />
-            <p>Lucia Valerie</p>
-          </div>
-          <div>
-            <img
-              src={sample}
-              alt=""
-              className="h-32 w-32 rounded-full object-cover"
-            />
-            <p>Elizabeth</p>
-          </div>
-          <div>
-            <img
-              src={sample}
-              alt=""
-              className="h-32 w-32 rounded-full object-cover"
-            />
-            <p>Abayomi</p>
-          </div>
-          <div>
-            <img
-              src={sample}
-              alt=""
-              className="h-32 w-32 rounded-full object-cover"
-            />
-            <p>Ayoola</p>
-          </div>
-        </Slider>
-      </div> */}
     </section>
   );
 }

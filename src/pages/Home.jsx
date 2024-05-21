@@ -20,7 +20,7 @@ const Home = () => {
       </div>
       <CountUpAnimation />
       <Aside />
-      <Benefit />
+      <Benefit text="Traveling Makes A Man Wiser," textTwo="But Less Happy." />
       <HappyClients />
     </div>
   );

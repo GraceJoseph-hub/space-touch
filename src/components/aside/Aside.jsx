@@ -36,7 +36,7 @@ const Aside = () => {
     },
   ];
   return (
-    <div className="flex flex-row gap-6 px-20 py-20 w-full">
+    <div className="flex flex-row gap-6 p-20 w-full">
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -48,12 +48,6 @@ const Aside = () => {
             <p className={isHovered ? styles.show : styles.hide}>$1520</p>
           </div>
         </div>
-        {/* <div className="-mt-20 ml-6 "></div> */}
-        {/* <img src={g10} alt="" className="border border-solid rounded-xl" />
-        <div className="-mt-20 ml-6 text-light">
-          <h6>3 Days, 4 Nights</h6>
-          <p className={isHovered ? styles.show : styles.hide}>$1520</p>
-        </div> */}
       </div>
 
       <div className="grid grid-cols-2 gap-6 grid-rows-2 h-[667px] w-1/2">
