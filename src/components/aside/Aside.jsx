@@ -6,7 +6,7 @@ import g6 from "../../../public/images/g6.jpg";
 import g7 from "../../../public/images/g7.jpg";
 import g8 from "../../../public/images/g8.jpg";
 import g9 from "../../../public/images/g9.jpg";
-import g10 from "../../../public/images/g10.jpg";
+
 
 const Aside = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);

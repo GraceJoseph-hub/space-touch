@@ -4,6 +4,7 @@ import AboutCompany from '../components/aboutCompany/AboutCompany'
 import WhyChooseUs from '../components/whyChooseUs/WhyChooseUs'
 import AboutCard from '../components/aboutCard/AboutCard'
 import AboutSubBanner from '../components/aboutSubBanner/AboutSubBanner'
+import Team from '../components/team/Team'
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
       <WhyChooseUs />
       <AboutCard />
       <AboutSubBanner />
+      <Team />
     </div>
   )
 }
