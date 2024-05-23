@@ -18,8 +18,8 @@ export default {
       },
       screens: {
         smallBP: "320px",
-        semiBP: "437px",
-        custom: "520px",
+        semiBP: "546px",
+        custom: "706px",
         custom1: "992px",
         custom2: "1024px",
         custom3: "1100px",

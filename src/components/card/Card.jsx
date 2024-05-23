@@ -9,10 +9,10 @@ const Card = () => {
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="h-[262.17px] flex items-center gap-5 p-[27px] bg-light border border-solid rounded-lg shadow-md custom1:h-[333.5px]"
+          className="flex flex-col semiBP:flex-row items-center gap-5 p-[27px] bg-light border border-solid rounded-lg shadow-md"
         >
           {/* image here  */}
-          <div className="flex w-[40%] h-full border border-solid bg-blue-500 flex-shrink-0 rounded-xl">
+          <div className="flex w-full h-[370px] semiBP:w-56 semiBP:h-[340px] border border-solid flex-shrink-0 rounded-xl custom1:w-44 custom1:h-[280px]">
             <img
               src={card.path}
               alt="beautiful places to visit"
