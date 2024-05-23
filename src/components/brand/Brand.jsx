@@ -1,6 +1,5 @@
 import React, {useEffect, useRef} from 'react'
 import { Link } from "react-router-dom";
-import brandlogo from './brandlogo.jpg'
 import { gsap } from "gsap";
 
 
@@ -24,13 +23,16 @@ const Brand = () => {
   
   const navBar = useRef(null);
   return (
-    <div className='flex items-center gap-12'>
-      <Link to='/' ref={navBar} className='text-3xl font-semibold navbar'>
+    <div className="flex items-center">
+      <Link
+        to="/"
+        ref={navBar}
+        className=" font-semibold navbar smallBP:text-base custom:text-2xl custom1:text-3xl"
+      >
         Spacetouch
       </Link>
-      <img src={brandlogo} alt="brand logo" width='35' height='35' className='cursor-pointer'/>
     </div>
-  )
+  );
 }
 
 export default Brand

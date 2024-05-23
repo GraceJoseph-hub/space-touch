@@ -14,7 +14,7 @@ const Home = () => {
       <div className="pb-10">
         <Carousel />
       </div>
-      <div className="w-full px-20 pt-20 pb-20">
+      <div className="w-full px-16 pt-20 pb-20 custom2:px-10">
         <Title />
         <Card />
       </div>

@@ -45,7 +45,7 @@ export default function SimpleSlider() {
               className="w-full h-96 object-cover bg-center"
             />
             <div className="absolute pt-16 pl-20 inset-0 text-white bg-black bg-opacity-50">
-              <h3 className="text-5xl font-semibold mb-5">
+              <h3 className="font-semibold mb-5 smallBP:text-xs semiBP:text-sm custom:text-3xl custom1:text-5xl">
                 You don't need to go far to <br /> find what matters.
               </h3>
               <p>Discover your next adventure</p>

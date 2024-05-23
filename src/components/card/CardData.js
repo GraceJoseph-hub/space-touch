@@ -17,7 +17,7 @@ const cardData = [
   },
   {
     path: g2,
-    title: "Morrocow",
+    title: "Bangkok",
     dayNight: "6 Days 5 Nights",
     startTitle: "Start from",
     amount: "$3850",
@@ -25,7 +25,7 @@ const cardData = [
   },
   {
     path: g3,
-    title: "Paris",
+    title: "Maldives",
     dayNight: "6 Days 5 Nights",
     startTitle: "Start from",
     amount: "$2750",
@@ -33,7 +33,7 @@ const cardData = [
   },
   {
     path: g4,
-    title: "Paris",
+    title: "Greece",
     dayNight: "6 Days 5 Nights",
     startTitle: "Start from",
     amount: "$1450",
@@ -41,7 +41,7 @@ const cardData = [
   },
   {
     path: g5,
-    title: "Paris",
+    title: "Egypt",
     dayNight: "6 Days 5 Nights",
     startTitle: "Start From",
     amount: "$3750",
@@ -49,7 +49,7 @@ const cardData = [
   },
   {
     path: g6,
-    title: "Paris",
+    title: "Kenya",
     dayNight: "6 Days 5 Nights",
     startTitle: "Start From",
     amount: "$1750",
@@ -57,7 +57,7 @@ const cardData = [
   },
   {
     path: g7,
-    title: "Paris",
+    title: "Morrocow",
     dayNight: "6 Days 5 Nights",
     startTitle: "Start From",
     amount: "$1750",
@@ -65,7 +65,7 @@ const cardData = [
   },
   {
     path: g8,
-    title: "Paris",
+    title: "Singapore",
     dayNight: "6 Days 5 Nights",
     startTitle: "Start From",
     amount: "$1750",
