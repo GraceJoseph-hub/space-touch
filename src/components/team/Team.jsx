@@ -10,8 +10,7 @@ import { Link } from "react-router-dom";
 
 const Team = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [isHovered, setIsHovered] = useState(false);
-
+  
   const description = [
     {
       name: "Tomiwa",
@@ -53,7 +52,6 @@ const Team = () => {
         {description.map((details, index) => (
           <div
             key={index}
-            // className="flex flex-col"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >

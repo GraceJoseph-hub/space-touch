@@ -26,36 +26,4 @@ const Destinations = () => {
 export default Destinations
 
 
-  // const details = {
-  //   title: "Paris",
-  //   dayNight: "6 Days 5 Nights",
-  //   startFrom: {
-  //     startTitle: "Start from",
-  //     amount: "$3750",
-  //   },
-  //   condition: 'Per person on twin sharing',
-  // };
-
-
-{
-  /* <p>{details.title}</p>
-      <p>{details.dayNight}</p>
-      <div>
-        <span>{details.startFrom.startTitle}</span>
-        <span>{details.startFrom.amount}</span>
-      </div>
-      <p>{details.condition}</p> */
-}
-
-{
-  /* {cardData.map((dataItem) => (
-        <div>
-          {dataItem.title}
-          {dataItem.dayNight}
-          <div>
-            {dataItem.startFrom.startTitle}
-            {dataItem.startFrom.amount}
-          </div>
-        </div>
-      ))} */
-}
+  

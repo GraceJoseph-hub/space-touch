@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import { useState } from "react";
 import styles from "../aside/Aside.module.css";
 import g6 from "../../../public/images/g6.jpg";
