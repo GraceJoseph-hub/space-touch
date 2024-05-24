@@ -33,7 +33,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class", // Enable class-based dark mode
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -47,6 +47,8 @@ export default {
         lightGrey: "#c5c5c5",
         darkBg: "#1a1a2e",
         darkText: "#e0e0e0",
+        black: "#000000",
+        gray900: "#1a1a1a", 
       },
       screens: {
         smallBP: "320px",
@@ -60,4 +62,3 @@ export default {
   },
   plugins: [],
 };
-

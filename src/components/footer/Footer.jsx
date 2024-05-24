@@ -4,9 +4,9 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full px-20 py-10">
+    <div className="w-full px-20 py-10 bg-gray-100 dark:bg-black">
       <div className="flex justify-between pb-10">
-        <div className="text-gray-800">
+        <div className="text-gray-800 dark:text-white">
           <h2 className="text-lg font-bold mb-4">Company</h2>
           <ul>
             <li className="mb-2">
@@ -31,15 +31,15 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className=" text-gray-800">
+        <div className="text-gray-800 dark:text-white bg-white dark:bg-gray-900 p-6 rounded-md shadow-md">
           <h2 className="text-lg font-bold mb-4">Newsletter</h2>
-          <form className=" flex flex-col gap-y-5 w-[33.2rem] mb-2 bg-white p-6 rounded-md shadow-md">
+          <form className="flex flex-col gap-y-5 mb-2">
             <p>Get latest updates and offers.</p>
             <div className="flex gap-x-2">
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-[22.4rem] p-2 bg-off-white border-gray-300 rounded-md focus:outline-none"
+                className="w-[22.4rem] p-2 bg-off-white border-gray-300 rounded-md focus:outline-none dark:bg-gray-800"
               />
               <button
                 type="submit"
@@ -48,7 +48,7 @@ const Footer = () => {
                 Go
               </button>
             </div>
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-500 text-sm dark:text-gray-400">
               Sign up for our latest news & articles. We won't give you spam
               <br />
               mails.
@@ -56,20 +56,32 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <hr />
-      <div className="flex justify-between mt-7">
+      <hr className="border-gray-300 dark:border-gray-700" />
+      <div className="flex justify-between mt-7 text-gray-800 dark:text-white">
         <p>© 2022 Spacetouch Travels. All rights reserved.</p>
         <div className="flex gap-7">
-          <Link to="https://web.facebook.com/spacetouchtours?_rdc=1&_rdr" className="p-2 hover:bg-red rounded-full text-center hover:text-light">
+          <Link
+            to="https://web.facebook.com/spacetouchtours?_rdc=1&_rdr"
+            className="p-2 hover:bg-red rounded-full text-center hover:text-light"
+          >
             <FaFacebook />
           </Link>
-          <Link to="https://x.com/spacetouchTours" className="p-2 hover:bg-red rounded-full text-center hover:text-light">
+          <Link
+            to="https://x.com/spacetouchTours"
+            className="p-2 hover:bg-red rounded-full text-center hover:text-light"
+          >
             <FaTwitter />
           </Link>
-          <Link to="https://www.instagram.com/spacetouchtours" className="p-2 hover:bg-red rounded-full text-center hover:text-light">
+          <Link
+            to="https://www.instagram.com/spacetouchtours"
+            className="p-2 hover:bg-red rounded-full text-center hover:text-light"
+          >
             <FaInstagram />
           </Link>
-          <Link to="https://www.youtube.com/spacetouchtv" className="p-2 hover:bg-red rounded-full text-center hover:text-light">
+          <Link
+            to="https://www.youtube.com/spacetouchtv"
+            className="p-2 hover:bg-red rounded-full text-center hover:text-light"
+          >
             <FaYoutube />
           </Link>
         </div>
@@ -79,4 +91,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
