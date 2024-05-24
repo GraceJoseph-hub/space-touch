@@ -10,9 +10,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function App() {
+  
   gsap.registerPlugin(ScrollTrigger);
   return (
-    <div className="bg-off-white w-full">
+    <div className="bg-off-white dark:bg-darkBg w-full">
       <Router>
         <Navbar />
         <Routes>

@@ -9,7 +9,7 @@ import HappyClients from "../components/happyClients/HappyClients";
 
 const Home = () => {
   return (
-    <div className="mt-20">
+    <div className="">
       <div className="pb-10">
         <Carousel />
       </div>

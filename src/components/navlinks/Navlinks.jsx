@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import logo from "../../../public/images/logo.jpg";
-// useLocation is a react router hook that has an object that contains the current/active route/page 
+// useLocation is a react router hook that has an object that contains the current/active route/page
 
 const Navlinks = ({className}) => {
   const location = useLocation();
@@ -28,7 +28,7 @@ const Navlinks = ({className}) => {
     },
   ];
   return (
-    <div className="hidden custom1:flex items-center gap-5">
+    <div className={`hidden custom1:flex items-center gap-5 ${className}`}>
       <img
         src={logo}
         alt="brand logo"
@@ -54,3 +54,4 @@ const Navlinks = ({className}) => {
 }
 
 export default Navlinks
+
