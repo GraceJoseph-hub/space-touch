@@ -10,10 +10,10 @@ import HappyClients from "../components/happyClients/HappyClients";
 const Home = () => {
   return (
     <div className="">
-      <div className="pb-10">
+      <div className="pb-10 mt-20">
         <Carousel />
       </div>
-      <div className="w-full px-16 semiBP:px-32 pt-20 pb-20 custom1:px-20">
+      <div className="w-full px-16 semiBP:px-32 pt-20 pb-20 custom1:px-20 bg-light dark:bg-[#111]">
         <Title />
         <Card />
       </div>
