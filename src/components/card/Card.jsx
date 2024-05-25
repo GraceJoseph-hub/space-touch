@@ -28,7 +28,7 @@ const Card = () => {
                 {card.dayNight}
               </p>
             </div>
-            <div className="flex justify-between border-t border-b pt-1 pb-1 border-lightGrey dark:border-gray-600 text-sm font-bold">
+            <div className="flex justify-between border-dotted border-t border-b pt-1 pb-1 border-lightGrey dark:border-gray-600 dark:border-dotted text-sm font-bold">
               <p className="text-sm font-bold capitalize text-black dark:text-white">
                 Start from
               </p>

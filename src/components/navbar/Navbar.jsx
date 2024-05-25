@@ -38,17 +38,17 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <>
       <div className="bg-light dark:bg-black w-full px-20 fixed top-0 left-0 right-0 z-50 h-[100px]">
         <div className="flex items-center justify-between h-20 w-full mx-auto">
           <Brand theme={theme} />
-          <div className="hidden custom1:flex items-center gap-5">
+          <div className="hidden custom1:flex flex-1 items-center gap-5">
             <img
               src={logo}
               alt="brand logo"
               width="35"
               height="35"
-              className="cursor-pointer smallBP:hidden semiBP:block custom:block custom1:block"
+              className="cursor-pointer dark:rounded-md smallBP:hidden semiBP:block custom:block custom1:block"
             />
             {links.map((link, index) => (
               <div
@@ -116,7 +116,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

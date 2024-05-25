@@ -15,7 +15,6 @@ const Brand = ({ theme }) => {
       }
     };
 
-    // Set initial color based on theme
     const isDarkMode = theme === "dark";
     gsap.to(navBar.current, { color: isDarkMode ? "#ffffff" : "black" });
 
@@ -31,7 +30,7 @@ const Brand = ({ theme }) => {
       <Link
         to="/"
         ref={navBar}
-        className="font-semibold navbar smallBP:text-base custom:text-2xl custom1:text-3xl"
+        className="font-semibold navbar smallBP:text-base custom:text-2xl custom1:text-3xl pr-16"
       >
         Spacetouch
       </Link>

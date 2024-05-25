@@ -49,22 +49,22 @@ const Footer = () => {
           <h2 className="text-lg font-semibold mb-4 dark:text-light">
             Newsletter
           </h2>
-          <form className="flex flex-col gap-y-5 w-[33.2rem] mb-2 bg-white p-6 rounded-md shadow-md">
-            <p>Get latest updates and offers.</p>
+          <form className="flex flex-col gap-y-5 w-[33.2rem] mb-2 bg-white dark:bg-black p-6 rounded-md shadow-md">
+            <p className="dark:text-light">Get latest updates and offers.</p>
             <div className="flex gap-x-2">
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-[22.4rem] p-2 bg-off-white border-gray-300 rounded-md focus:outline-none"
+                className="w-[22.4rem] px-4 bg-off-white text-grey text-sm border-gray-300 rounded-md focus:outline-none dark:bg-[#111]"
               />
               <button
                 type="submit"
-                className="px-7 py-2 font-bold bg-red rounded-md hover:bg-red-600"
+                className="px-7 py-2 font-bold bg-red rounded-md hover:bg-red-600 dark:text-light"
               >
                 Go
               </button>
             </div>
-            <p className="text-grey dark:text-dark text-sm">
+            <p className="text-grey text-sm">
               Sign up for our latest news & articles. We won't give you spam
               <br />
               mails.

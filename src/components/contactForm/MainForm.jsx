@@ -66,27 +66,27 @@ const MainForm = () => {
   };
   return (
     <form onSubmit={formSubmitHandler}>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 ">
         <input
           type="text"
           placeholder="Your Name*"
           onChange={nameFieldHandler}
           value={nameField}
-          className="w-[32rem] text-darkShade text-sm border px-4 py-3 rounded-md outline-none"
+          className="w-[32rem] text-darkShade dark:bg-black text-sm border px-4 py-3 rounded-md outline-none"
         />
         <input
           type="email"
           placeholder="Your Email*"
           onChange={emailHandler}
           value={email}
-          className="w-[32rem] text-darkShade text-sm border px-4 py-3 rounded-md outline-none"
+          className="w-[32rem] text-darkShade dark:bg-black text-sm border px-4 py-3 rounded-md outline-none"
         />
         <input
           type="text"
           placeholder="Subject*"
           onChange={subjectHandler}
           value={subject}
-          className="w-[32rem] text-darkShade text-sm border px-4 py-3 rounded-md outline-none"
+          className="w-[32rem] text-darkShade dark:bg-black text-sm border px-4 py-3 rounded-md outline-none"
         />
         <textarea
           rows="4"
@@ -94,12 +94,12 @@ const MainForm = () => {
           placeholder="Type your message here*"
           onChange={complaintHandler}
           value={complaintBox}
-          className="w-[32rem] text-darkShade text-sm border px-4 py-3 rounded-md outline-none"
+          className="w-[32rem] text-darkShade dark:bg-black text-sm border px-4 py-3 rounded-md outline-none"
         />
       </div>
       <button
         className={`px-6 py-3 rounded-md text-light mt-4 ${
-          canSubmit ? "bg-red" : "bg-lightGrey cursor-not-allowed"
+          canSubmit ? "bg-red" : "bg-lightGrey dark:bg-black dark:text-light dark:border cursor-not-allowed"
         }`}
         onClick={formSubmitHandler}
         disabled={!canSubmit}

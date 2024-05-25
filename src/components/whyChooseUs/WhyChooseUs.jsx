@@ -3,10 +3,10 @@ import Btn from '../btn/Btn';
 
 const WhyChooseUs = () => {
   return (
-    <div className="flex justify-between items-start w-full p-20">
+    <div className="flex justify-between items-start w-full p-20 dark:bg-[#111]">
       <div className="font-semibold">
         <h3 className="text-red text-sm">WHY CHOOSE US</h3>
-        <h2 className="text-4xl">
+        <h2 className="text-4xl dark:text-light">
           Travel Is The Only Thing You <br /> Buy, Makes You Richer.
         </h2>
       </div>

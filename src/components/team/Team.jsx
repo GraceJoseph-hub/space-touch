@@ -43,9 +43,9 @@ const Team = () => {
     },
   ];
   return (
-    <div className="text-center bg-light px-20 pt-20 pb-44 w-full">
+    <div className="text-center bg-light dark:bg-black px-20 pt-20 pb-44 w-full">
       <h5 className="text-sm text-red font-semibold">OUR MANAGEMENT TEAM</h5>
-      <h2 className="text-4xl font-semibold">
+      <h2 className="text-4xl font-semibold dark:text-light">
         Meet The People Behind The Scenes
       </h2>
       <div className="grid grid-cols-4 gap-6 w-full mt-10">

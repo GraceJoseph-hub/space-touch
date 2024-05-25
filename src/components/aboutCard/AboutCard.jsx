@@ -27,7 +27,7 @@ const AboutCard = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-3 gap-x-7 p-20 w-full bg-light">
+    <div className="grid grid-cols-3 gap-x-7 p-20 w-full bg-light dark:bg-black">
       {cardDetails.map((cardDetail, index) => (
         <div key={index}>
           <img
@@ -38,8 +38,12 @@ const AboutCard = () => {
           <h3 className="text-[0.8rem] font-bold text-red mt-4">
             {cardDetail.info}
           </h3>
-          <h2 className="text-[1.4rem] font-semibold">{cardDetail.title}</h2>
-          <p className="text-[0.9rem] text-grey font-semibold">{cardDetail.description}</p>
+          <div className="font-semibold dark:text-light">
+            <h2 className="text-[1.4rem]">{cardDetail.title}</h2>
+            <p className="text-[0.9rem] text-grey">
+              {cardDetail.description}
+            </p>
+          </div>
         </div>
       ))}
     </div>

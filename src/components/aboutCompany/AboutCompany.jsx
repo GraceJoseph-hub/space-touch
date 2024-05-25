@@ -4,7 +4,7 @@ import banner3 from '../../../public/images/banner3.jpg'
 
 const AboutCompany = () => {
   return (
-    <section className="flex flex-col items-center gap-8 text-center bg-light py-24">
+    <section className="flex flex-col items-center gap-8 text-center bg-light dark:bg-black dark:text-light py-24">
       <div>
         <h5 className="text-red text-sm font-semibold">ABOUT US</h5>
         <h2 className="text-4xl font-semibold">
@@ -14,7 +14,7 @@ const AboutCompany = () => {
       <p className="text-center">
         Spacetouch Travels strives to provide her customers with the very best
         service in the travel and <br /> tours industry. Spacetouch Travels
-        gives you the best curated tour,vacation or even schooling <br />{" "}
+        gives you the best curated tour,vacation or even schooling <br />
         experience in countries of your choice.
       </p>
       <Btn path="/destination" text="Destination" />
