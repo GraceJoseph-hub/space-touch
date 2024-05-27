@@ -47,7 +47,7 @@ const Aside = () => {
           isTablet ? "w-full h-[400px]" : "md:h-[667px] w-full md:w-1/2"
         } bg-[url('../../../public/images/g10.jpg')] bg-no-repeat bg-cover border border-solid border-gray-300 dark:border-white rounded-xl relative`}
       >
-        <div className="h-full w-full bg-darkShade border border-solid border-gray-300 dark:border-white rounded-xl">
+        <div className="h-full w-full border border-solid border-gray-300 dark:border-white rounded-xl">
           <div className="text-black dark:text-white absolute bottom-10 left-10">
             <h6>3 Days, 4 Nights</h6>
             <p className={isHovered ? styles.show : styles.hide}>$1520</p>
