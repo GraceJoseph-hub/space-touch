@@ -17,9 +17,11 @@ const Home = () => {
         <Carousel />
       </div>
       <div
-        className={`w-full px-5 ${
-          isMobile ? "pt-10" : "px-16 semiBP:px-32 pt-20"
-        } pb-20 custom1:px-20 bg-light dark:bg-[#111]`}
+        className={`w-full ${
+          isTablet
+            ? "px-5 pt-10 pb-20"
+            : "px-16 semiBP:px-32 pt-20 pb-20 custom1:px-20"
+        } bg-light dark:bg-[#111]`}
       >
         <Title />
         <Card />

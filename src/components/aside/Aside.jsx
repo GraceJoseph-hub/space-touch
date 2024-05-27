@@ -4,12 +4,12 @@ import g6 from "../../../public/images/g6.jpg";
 import g7 from "../../../public/images/g7.jpg";
 import g8 from "../../../public/images/g8.jpg";
 import g9 from "../../../public/images/g9.jpg";
-import useScreenSize from "../useScreenSize"; 
+import useScreenSize from "../useScreenSize";
 
 const Aside = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
-  const { isMobile } = useScreenSize(); // Get the screen size info
+  const { isMobile, isTablet } = useScreenSize(); // Get the screen size info
 
   const description = [
     {
@@ -35,11 +35,17 @@ const Aside = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 p-6 md:p-20 w-full bg-light dark:bg-[#111]">
+    <div
+      className={`flex flex-col ${
+        isTablet ? "gap-4 p-4" : "md:flex-row gap-6 p-6 md:p-20"
+      } w-full bg-light dark:bg-[#111]`}
+    >
       <div
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="h-[300px] md:h-[667px] w-full md:w-1/2 bg-[url('../../../public/images/g10.jpg')] border border-solid border-gray-300 dark:border-white rounded-xl relative"
+        className={`h-[300px] ${
+          isTablet ? "w-full h-[400px]" : "md:h-[667px] w-full md:w-1/2"
+        } bg-[url('../../../public/images/g10.jpg')] bg-no-repeat bg-cover border border-solid border-gray-300 dark:border-white rounded-xl relative`}
       >
         <div className="h-full w-full bg-darkShade border border-solid border-gray-300 dark:border-white rounded-xl">
           <div className="text-black dark:text-white absolute bottom-10 left-10">
@@ -49,7 +55,11 @@ const Aside = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-6 grid-rows-2 h-auto md:h-[667px] w-full md:w-1/2">
+      <div
+        className={`grid grid-cols-2 gap-6 grid-rows-2 ${
+          isTablet ? "h-auto" : "md:h-[667px]"
+        } w-full ${isTablet ? "" : "md:w-1/2"}`}
+      >
         {description.map((details, index) => (
           <div
             key={index}
@@ -57,7 +67,13 @@ const Aside = () => {
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <div className="h-[160px] md:h-[320px] w-full md:w-[255px] border border-solid border-gray-300 dark:border-white rounded-xl overflow-hidden">
+            <div
+              className={`h-[160px] ${
+                isTablet
+                  ? "w-full h-[300px]"
+                  : "md:h-[320px] w-full md:w-[255px]"
+              } border border-solid border-gray-300 dark:border-white rounded-xl overflow-hidden`}
+            >
               <img
                 src={details.path}
                 alt=""
