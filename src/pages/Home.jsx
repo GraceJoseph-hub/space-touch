@@ -20,7 +20,7 @@ const Home = () => {
         className={`w-full ${
           isTablet
             ? "px-5 pt-10 pb-20"
-            : "px-16 semiBP:px-32 pt-20 pb-20 custom1:px-20"
+            : "px-8 semiBP:px-28 pt-20 pb-20 custom1:px-16"
         } bg-light dark:bg-""`}
       >
         <Title />
