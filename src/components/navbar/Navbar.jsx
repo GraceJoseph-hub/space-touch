@@ -7,7 +7,7 @@ import { FaBars, FaSquareXmark, FaSun } from "react-icons/fa6";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../../public/images/logo.jpg";
 import styles from "./navbar.module.css";
-import useScreenSize from "../useScreenSize"; 
+import useScreenSize from "../useScreenSize";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -76,7 +76,8 @@ const Navbar = () => {
             </div>
           )}
           <div className="flex items-center gap-4">
-            <Btn text="Get in Touch" isMainColor />
+            {!isMobile && !isTablet && <Btn text="Get in Touch" isMainColor />}{" "}
+            {/* Hide Btn on mobile and tablet */}
             <div onClick={toggleBtn} className="lg:hidden cursor-pointer">
               {isOpen ? (
                 <FaSquareXmark
@@ -127,6 +128,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 

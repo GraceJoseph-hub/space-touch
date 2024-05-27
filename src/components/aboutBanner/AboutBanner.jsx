@@ -4,7 +4,7 @@ import HeroBanner from '../heroBanner/HeroBanner'
 const AboutBanner = () => {
   return (
     <div>
-      <HeroBanner text="About"/>
+      <HeroBanner text1="About" text="About"/>
     </div>
   );
 };
