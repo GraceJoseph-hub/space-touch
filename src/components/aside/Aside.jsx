@@ -47,7 +47,7 @@ const Aside = () => {
         className={`h-[300px] ${
           isTablet ? "w-full h-[400px]" : "md:h-[667px] w-full md:w-1/2"
         } bg-no-repeat bg-cover border border-solid border-gray-300 dark:border-white rounded-xl relative`}
-        style={{ backgroundImage: `url(${g10})` }} // Adding the background image here
+        style={{ backgroundImage: `url(${g10})` }} 
       >
         <div className="h-full w-full bg-darkShade bg-opacity-50 border border-solid border-gray-300 dark:border-white rounded-xl">
           <div className="text-black dark:text-white absolute bottom-10 left-10">

@@ -7,21 +7,19 @@ const Benefit = () => {
   const getTextSize = () => {
     if (isMobile) return "text-lg";
     if (isTablet) return "text-xl";
-    return "text-4xl"; // Changed to match the original 4xl for large screens
+    return "text-4xl"; 
   };
 
   const getTextPosition = () => {
     if (isMobile)
-      return "top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"; // Centering on mobile
-    if (isTablet) return "top-24 left-10"; // Adjusting for tablet
-    return "top-24 left-20"; // Adjusting for larger screens
+      return "top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2";
+    if (isTablet) return "top-24 left-10"; 
+    return "top-24 left-20"; 
   };
 
   return (
     <div className='h-72 w-full bg-[url("../../../public/images/banner2.jpg")] bg-cover bg-center'>
-      <div className="h-full w-full bg-darkShade bg-opacity-50 relative">
-        {" "}
-        {/* Added bg-opacity for a better look */}
+      <div className="h-full w-full bg-darkShade md:bg-opacity-50 relative">
         <p
           className={`text-light font-semibold absolute ${getTextPosition()} ${getTextSize()}`}
         >
