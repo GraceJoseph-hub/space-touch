@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
-import backgroundImage from "../../../public/images/banner2.jpg"; // Make sure this path is correct
+import backgroundImage from "../../../public/images/banner2.jpg";
 
 const ContactBanner = ({ text1, text }) => {
   return (

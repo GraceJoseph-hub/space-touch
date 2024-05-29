@@ -1,5 +1,6 @@
 import React from "react";
 import useScreenSize from "../useScreenSize";
+import backgroundImage from '../../../public/images/banner2.jpg'
 
 const Benefit = () => {
   const { isMobile, isTablet } = useScreenSize();
@@ -18,7 +19,10 @@ const Benefit = () => {
   };
 
   return (
-    <div className='h-72 w-full bg-[url("../../../public/images/banner2.jpg")] bg-cover bg-center'>
+    <div
+      className='h-72 w-full bg-cover bg-center'
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
       <div className="h-full w-full relative">
         {/* bg-darkShade md:bg-opacity-50 */}
         <p
