@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { FaFaceGrinBeam, FaPeopleGroup } from "react-icons/fa6";
 import { FaDatabase } from "react-icons/fa";
 import useScreenSize from "../useScreenSize";
+import backgroundImage from '../../../public/images/banner3.jpg'
 
 const AboutSubBanner = () => {
   const { isMobile, isTablet } = useScreenSize();
@@ -26,7 +27,10 @@ const AboutSubBanner = () => {
   ];
 
   return (
-    <div className='h-[20.3rem] w-full bg-[url("../../../public/images/banner3.jpg")] bg-cover bg-center'>
+    <div
+      className='h-[20.3rem] w-full  bg-cover bg-center'
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
       <div
         className={`${
           isMobile || isTablet
