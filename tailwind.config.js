@@ -45,7 +45,7 @@ export default {
         grey: "#777777",
         amber: "rgb(67 20 7)",
         lightGrey: "#c5c5c5",
-        darkBg: "#1a1a2e",
+        darkBg: "#111",
         darkText: "#e0e0e0",
         black: "#000000",
         gray900: "#1a1a1a", 
