@@ -8,7 +8,7 @@ const CountUpAnimation = () => {
   return (
     <div
       className={`grid ${
-        isMobile ? "grid-cols-1" : "grid-cols-2"
+        isMobile ? "grid-cols-2" : "grid-cols-2"
       } gap-5 md:gap-10 items-center justify-center ${
         isMobile ? "text-2xl" : isTablet ? "text-3xl" : "text-5xl"
       } text-red font-semibold w-full ${
