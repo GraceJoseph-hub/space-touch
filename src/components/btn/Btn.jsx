@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useScreenSize from "../useScreenSize"; // Import the useScreenState hook
+import useScreenSize from "../useScreenSize"; 
 
 const Btn = ({ path, text, isMainColor, className }) => {
-  const { isMobile, isTablet, isDesktop } = useScreenSize(); // Get the screen size info
+  const { isMobile, isTablet, isDesktop } = useScreenSize();
 
   return (
     <div className={`flex items-center gap-5 ${className}`}>

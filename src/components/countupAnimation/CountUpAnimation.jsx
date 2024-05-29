@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import useScreenSize from "../useScreenSize";
 
 const CountUpAnimation = () => {
-  const { isMobile, isTablet, isDesktop } = useScreenSize();
+  const { isMobile, isTablet} = useScreenSize();
 
   return (
     <div
