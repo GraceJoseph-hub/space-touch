@@ -6,7 +6,7 @@ const Destinations = () => {
   const { isMobile, isTablet } = useScreenSize(); 
 
   return (
-    <div className={`p-8 md:p-20 w-full bg-light dark:bg-black`}>
+    <div className={`p-8 md:p-20 w-full bg-light dark:bg-[#111]`}>
       <h2 className="text-4xl font-semibold dark:text-light">Destinations</h2>
       <div
         className={`grid ${
