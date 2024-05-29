@@ -5,7 +5,7 @@ import HeroBanner from '../heroBanner/HeroBanner'
 const ContactBanner = () => {
   return (
     <div>
-      <HeroBanner text="Contact"/>
+      <HeroBanner text1="Contact Us" text="Contact"/>
     </div>
   );
 }

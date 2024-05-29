@@ -8,44 +8,42 @@ const WhyChooseUs = () => {
   return (
     <div
       className={`flex ${
-        isMobile || isTablet ? "flex-col w-full" : "flex-row w-full"
-      } justify-between items-start ${
-        isMobile || isTablet ? "p-8" : "p-20"
-      } dark:bg-[#111]`}
+        isMobile || isTablet
+          ? "flex-col items-center"
+          : "justify-between items-start"
+      } w-full p-8 md:p-20 dark:bg-[#111]`}
     >
-      <div className="font-semibold w-full">
+      <div
+        className={`font-semibold ${
+          isMobile || isTablet ? "text-center mb-8" : ""
+        }`}
+      >
         <h3 className="text-red text-sm">WHY CHOOSE US</h3>
         <h2
           className={`dark:text-light ${
-            isMobile || isTablet ? "text-2xl" : "text-4xl"
+            isMobile ? "text-2xl" : isTablet ? "text-3xl" : "text-4xl"
           }`}
         >
-          Travel Is The Only Thing You <br /> Buy, Makes You Richer.
+          Travel Is The Only Thing You {isDesktop && <br />} Buy, Makes You
+          Richer.
         </h2>
       </div>
       <div
         className={`flex flex-col gap-8 ${
-          isMobile || isTablet ? "w-full mt-8" : "w-1/2"
+          isMobile || isTablet ? "text-center" : ""
         }`}
       >
-        <p
-          className={`text-grey ${
-            isMobile || isTablet ? "text-sm" : "text-base"
-          }`}
-        >
+        <p className="text-grey">
           Our Services includes but not limited to flight ticket (local and
-          <br />
-          international), Hotel Resevations, Educational tours/excursion, Visa
-          <br />
-          consultancy, Corporate Travels/Tours, Honeymoon/Vacation, Study <br />
+          {isDesktop ? <br /> : " "}international), Hotel Resevations,
+          Educational tours/excursion, Visa
+          {isDesktop ? <br /> : " "}consultancy, Corporate Travels/Tours,
+          Honeymoon/Vacation, Study {isDesktop ? <br /> : " "}
           abroad assistance etc.
         </p>
-        <p
-          className={`text-grey ${
-            isMobile || isTablet ? "text-sm" : "text-base"
-          }`}
-        >
-          We are connected to over 1500 Universities worldwide with our <br />
+        <p className="text-grey">
+          We are connected to over 1500 Universities worldwide with our{" "}
+          {isDesktop ? <br /> : " "}
           Education Consult department.
         </p>
         <Btn path="/destination" text="Destinations" />
@@ -55,3 +53,36 @@ const WhyChooseUs = () => {
 };
 
 export default WhyChooseUs;
+
+// import React from 'react'
+// import Btn from '../btn/Btn';
+
+// const WhyChooseUs = () => {
+//   return (
+//     <div className="flex justify-between items-start w-full p-20 dark:bg-[#111]">
+//       <div className="font-semibold">
+//         <h3 className="text-red text-sm">WHY CHOOSE US</h3>
+//         <h2 className="text-4xl dark:text-light">
+//           Travel Is The Only Thing You <br /> Buy, Makes You Richer.
+//         </h2>
+//       </div>
+//       <div className="flex flex-col gap-8">
+//         <p className="text-grey">
+//           Our Services includes but not limited to flight ticket (local and
+//           <br />
+//           international), Hotel Resevations, Educational tours/excursion, Visa
+//           <br />
+//           consultancy, Corporate Travels/Tours, Honeymoon/Vacation, Study <br />
+//           abroad assistance etc.
+//         </p>
+//         <p className="text-grey">
+//           We are connected to over 1500 Universities worldwide with our <br />
+//           Education Consult department.
+//         </p>
+//         <Btn path="/destination" text="Destinations"/>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default WhyChooseUs
