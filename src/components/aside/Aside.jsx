@@ -39,7 +39,7 @@ const Aside = () => {
     <div
       className={`flex flex-col ${
         isTablet ? "gap-4 p-4" : "md:flex-row gap-6 p-6 md:p-20"
-      } w-full bg-light dark:bg-[#111]`}
+      } w-full bg-light dark:bg-""`}
     >
       <div
         onMouseEnter={() => setIsHovered(true)}
