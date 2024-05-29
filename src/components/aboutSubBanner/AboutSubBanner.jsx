@@ -35,9 +35,18 @@ const AboutSubBanner = () => {
         } h-full w-full bg-darkShade relative`}
       >
         {counter.map((count, index) => (
-          <div key={index} className="text-2xl text-light font-semibold">
-            <p className="text-4xl">{count.icon}</p>
-            <p className="text-3xl">{count.counts}</p>
+          <div
+            key={index}
+            className={`${
+              isMobile || isTablet ? "text-xl" : "text-2xl"
+            } text-light font-semibold`}
+          >
+            <p className={`${isMobile || isTablet ? "text-2xl" : "text-4xl"}`}>
+              {count.icon}
+            </p>
+            <p className={`${isMobile || isTablet ? "text-xl" : "text-3xl"}`}>
+              {count.counts}
+            </p>
             <p>{count.title}</p>
           </div>
         ))}
