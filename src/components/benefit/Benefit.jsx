@@ -20,11 +20,11 @@ const Benefit = () => {
 
   return (
     <div
-      className='h-72 w-full bg-cover bg-center'
+      className="h-72 w-full bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="h-full w-full relative">
-        {/* bg-darkShade md:bg-opacity-50 */}
+      <div className="h-full w-full bg-darkShade relative">
+        {/*  md:bg-opacity-50 */}
         <p
           className={`text-light font-semibold absolute ${getTextPosition()} ${getTextSize()}`}
         >
