@@ -62,7 +62,7 @@ const MainForm = () => {
     setComplainBox("");
   };
 
-  const inputWidth = isMobile ? "w-full" : isTablet ? "w-full" : "w-full";
+  const inputWidth = isMobile ? "w-full" : isTablet ? "w-full" : "w-[33rem]";
 
   return (
     <form onSubmit={formSubmitHandler} className="flex flex-col gap-6">

@@ -3,7 +3,7 @@ import useScreenSize from "../useScreenSize";
 import backgroundImage from '../../../public/images/banner2.jpg'
 
 const Benefit = () => {
-  const { isMobile, isTablet } = useScreenSize();
+  const { isMobile, isTablet, isDesktop } = useScreenSize();
 
   const getTextSize = () => {
     if (isMobile) return "text-lg";
@@ -12,8 +12,8 @@ const Benefit = () => {
   };
 
   const getTextPosition = () => {
-    if (isMobile)
-      return "top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2";
+    if (isMobile || isDesktop)
+      return "top-[40%] left-[40%]";
     if (isTablet) return "top-24 left-10"; 
     return "top-24 left-20"; 
   };
@@ -24,11 +24,10 @@ const Benefit = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="h-full w-full bg-darkShade relative">
-        
         <p
           className={`text-light font-semibold absolute ${getTextPosition()} ${getTextSize()}`}
         >
-          Traveling makes a man {isMobile && <br />} wiser, but less happy.
+          Traveling makes a man wiser, {isDesktop && <br />} but less happy.
         </p>
       </div>
     </div>

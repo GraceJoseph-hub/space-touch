@@ -50,7 +50,7 @@ const Aside = () => {
         style={{ backgroundImage: `url(${g10})` }} 
       >
         <div className="h-full w-full bg-darkShade bg-opacity-50 border border-solid border-gray-300 dark:border-white rounded-xl">
-          <div className="text-black dark:text-white absolute bottom-10 left-10">
+          <div className="text-white absolute bottom-10 left-10">
             <h6>3 Days, 4 Nights</h6>
             <p className={isHovered ? styles.show : styles.hide}>$1520</p>
           </div>

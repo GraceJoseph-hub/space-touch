@@ -35,7 +35,7 @@ const AboutSubBanner = () => {
         className={`${
           isMobile || isTablet
             ? "grid grid-cols-2 gap-4 p-4"
-            : "flex justify-between items-center px-16"
+            : "flex justify-between items-center px-24"
         } h-full w-full bg-darkShade relative`}
       >
         {counter.map((count, index) => (
