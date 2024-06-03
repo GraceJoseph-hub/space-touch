@@ -16,25 +16,25 @@ const CountUpAnimation = () => {
       } bg-light dark:bg-black px-5 md:px-20 py-10`}
     >
       <div className="flex flex-col items-center">
-        <CountUp start={0} end={10} duration={2} />
+        <CountUp start={0} end={10} duration={10} />
         <p className="text-lg mt-3 text-gray-500 dark:text-white font-thin">
           Branches
         </p>
       </div>
       <div className="flex flex-col items-center">
-        <CountUp start={0} end={350} duration={2} />
+        <CountUp start={0} end={350} duration={10} />
         <p className="text-lg mt-3 text-gray-500 dark:text-white font-thin">
           Travel Guides
         </p>
       </div>
       <div className="flex flex-col items-center">
-        <CountUp start={0} end={3812} duration={2} />
+        <CountUp start={0} end={3812} duration={10} />
         <p className="text-lg mt-3 text-gray-500 dark:text-white font-thin">
           Happy Customers
         </p>
       </div>
       <div className="flex flex-col items-center">
-        <CountUp start={0} end={93} duration={2} />
+        <CountUp start={0} end={93} duration={10} />
         <p className="text-lg mt-3 text-gray-500 dark:text-white font-thin">
           Staff
         </p>
