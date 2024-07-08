@@ -11,7 +11,7 @@ const Btn = ({ path, text, isMainColor, className }) => {
         to={path}
         className={`${
           isMainColor
-            ? `bg-red text-light rounded-md hover:transition hover:border-4 hover:border-pink-300 hover:shadow-md 
+            ? `bg-red text-light rounded-md transform hover:scale-105 hover:bg-red transition delay-50 duration-300 ease-in-out 
               ${
                 isMobile
                   ? "px-4 py-2 text-sm"

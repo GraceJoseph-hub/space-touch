@@ -76,7 +76,13 @@ const Navbar = () => {
             </div>
           )}
           <div className="flex items-center gap-4">
-            {!isMobile && !isTablet && <Btn text="Get in Touch" isMainColor />}
+            {!isMobile && !isTablet && (
+              <Btn
+                text="Get in Touch"
+                isMainColor
+                className="transform hover:scale-105 hover:bg-red transition delay-50 duration-300 ease-in-out"
+              />
+            )}
             {/* Hide Btn on mobile and tablet */}
             <div onClick={toggleBtn} className="lg:hidden cursor-pointer">
               {isOpen ? (

@@ -12,7 +12,7 @@ const ContactForm = () => {
       }`}
     >
       <div className="flex flex-col gap-6 dark:text-light">
-        <h2 className="text-4xl font-semibold dark:text-light">Get in touch</h2>
+        <h2 className="text-4xl font-semibold dark:text-light ">Get in touch</h2>
         <p className="text-grey">
           Hi there, We are available 24/7 on social media, e-mail {isDesktop && <br />} or phone. Drop
           a message so we can talk more.
